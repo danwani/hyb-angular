@@ -38,3 +38,4 @@ beans.xsd
 *.LOCAL.*
 *.REMOTE.*
 *.orig
+*hmc.jar
