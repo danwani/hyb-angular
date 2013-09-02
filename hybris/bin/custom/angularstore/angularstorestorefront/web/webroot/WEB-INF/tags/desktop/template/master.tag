@@ -11,7 +11,7 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
-<html lang="${currentLanguage.isocode}">
+<html lang="${currentLanguage.isocode}" ng-app="MyApp">
 <head>
 	<title>
 		${not empty pageTitle ? pageTitle : not empty cmsPage.title ? cmsPage.title : 'Accelerator Title'}
@@ -40,6 +40,8 @@
 	
 	<%-- j query 1.5.1 --%>
 	<script type="text/javascript" src="${commonResourcePath}/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="${commonResourcePath}/js/angular.js"></script>
+	<script type="text/javascript" src="${commonResourcePath}/js/angular-resource.js"></script>
 	
 	<analytics:analytics/>
 

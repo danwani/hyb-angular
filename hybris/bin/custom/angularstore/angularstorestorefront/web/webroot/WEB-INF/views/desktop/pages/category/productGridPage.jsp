@@ -44,7 +44,7 @@
 				<cms:component component="${feature}" element="div" class="span-5 section3 small_detail"/>
 			</cms:pageSlot>
 
-			<div class="span-20 last">
+			<div class="span-20 last" ng-view>
 				<c:forEach items="${searchPageData.results}" var="product" varStatus="status">
 					<div class="span-4${(status.index+1)%5 == 0 ? ' last' : ''}${(status.index)%5 == 0 ? ' first clear' : ''}">
 						<product:productListerGridItem product="${product}" />
